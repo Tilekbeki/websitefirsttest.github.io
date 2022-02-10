@@ -9,18 +9,22 @@ body{
 h1{
 	font-family: "Poppins", sans-serif;
 	font-size: 25vmin;
-	line-height: 20vmin;
+	line-height: 25vmin;
+	text-align: center;
 
 }
 
 .gradient-text{
-	color: transparent;
 	background: conic-gradient(
 		#d9d7f1 12%, #baabda 12%,
 		#baabda 33%, #e7fbbe 33%,
 		#e7fbbe 55%, #ffcbcb 55%,
 		#ffcbcb 70%, #b5deff 70%,
 		#b5deff 87%, #f7d1ba 87%);
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 	background-size: 50%;
 	background-clip: text;
 	animation: expand-rev 0.5s ease forwards;
